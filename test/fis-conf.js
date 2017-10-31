@@ -1,6 +1,7 @@
 const parserVuePlugin = require('../index');
 // fis-conf.js fis.match('*.js', {     parser: parserVuePlugin })
 
+
 fis.set('project.fileType.text', 'vue');
 fis.hook('commonjs', {
     extList: [

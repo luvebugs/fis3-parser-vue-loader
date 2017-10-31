@@ -1,0 +1,9 @@
+@import "../less/other.less";
+.index.__vuec__ {
+  > p {
+    line-height: 50px;
+    text-align: center;
+    background: rgb(240, 203, 210);
+    border: 1px solid #ddd;
+  }
+}

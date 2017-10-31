@@ -1,0 +1,11 @@
+.component-b {
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgb(114, 61, 227);
+
+  a {
+    display: block;
+    border: 1px solid #ddd;
+  }
+}

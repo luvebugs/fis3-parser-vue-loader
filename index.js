@@ -57,18 +57,9 @@ module.exports = function (content, file, settings) {
     }
     function complier(output, type) {
         output = output.replace(emptyRE, '');
-        output = replaceScopedFlag(output);
         return fis.compile.partial(output, file, {
             ext: type,
             isJsLike: true
         });
-    }
-    // replace scoped flag
-    function replaceScopedFlag(str) {
-        var reg = new RegExp('([^a-zA-Z0-9\-_])(__vuec__)([^a-zA-Z0-9\-_])', 'g');
-        str = str.replace(reg, function($0, $1, $2, $3) {
-        return $1 + cacheKey + $3;
-        });
-        return str;
     }
 }
